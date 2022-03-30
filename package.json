@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "parcel serve ./src/index.html --open",
-    "build": "git rm ./index.* & parcel build ./src/index.html --dist-dir ./",
+    "build": "git rm ./index.* & parcel build ./src/index.html --dist-dir ./ --public-url https://meandmybadself.github.io/zip2state/",
     "test": ""
   },
   "repository": {
