@@ -7,4 +7,5 @@ export default (zip: string): string | undefined => {
             return data[key];
         }
     }
+    return ''
 }

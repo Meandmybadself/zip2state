@@ -1,17 +1,17 @@
 {
     "compilerOptions": {
+        "declaration": true,
+        "declarationMap": false,
         "esModuleInterop": true,
-        "outDir": "./dist",
         "experimentalDecorators": true,
-        "target": "es2019",
-        "module": "es2015",
-        "moduleResolution": "node",
         "lib": [
             "es2019",
             "dom"
         ],
-        "declaration": true,
-        "declarationMap": true,
+        "module": "es2015",
+        "moduleResolution": "node",
+        "outDir": "./dist",
+        "target": "es2019",
         "useDefineForClassFields": false
     }
 }
