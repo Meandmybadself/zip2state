@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "parcel serve ./src/index.html --open",
-    "build": "parcel build ./src/index.html --dist-dir ./public",
+    "build": "parcel build ./src/index.html --dist-dir ./",
     "test": ""
   },
   "repository": {
