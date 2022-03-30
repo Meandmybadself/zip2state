@@ -1,7 +1,7 @@
 {
   "name": "zip2state",
-  "version": "0.0.0",
-  "description": "Automatically & reliably derive US states from postal zip codes (<6k).",
+  "version": "1.0.0",
+  "description": "Automatically & reliably derive US states from postal zip codes (<5k).",
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
@@ -9,6 +9,10 @@
     "build": "rm -rf dist & parcel build ./src/index.ts --dist-dir ./dist",
     "parse": "node scripts/parse-csv.js",
     "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Meandmybadself/zip2state"
   },
   "keywords": [
     "zipcode",

@@ -6,7 +6,7 @@ Zip2State is a function that uses an optimized zipcode library to automatically 
 
 ## Usage
 Function accepts a string (could be a partial zipcode).
-Returns a two-letter US state code (or undefined if no state was found).
+Returns a two-letter US state code or '' if no state was found.
 
 ```
 import zip2state from 'zip2state'
@@ -16,8 +16,7 @@ console.log(realState) // "OH"
 
 const fakeState = zip2state('00000')
 console.log(fakeState) // undefined
-
 ```
 
-## Data
+## Data Attribution
 Uses `Coven, D. S., (2012). Free Zipcode Database: Unique Zipcode [data file]. Retrieved from http://federalgovernmentzipcodes.us`
