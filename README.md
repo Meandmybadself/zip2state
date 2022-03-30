@@ -11,8 +11,11 @@ Returns a two-letter US state code or '' if no state was found.
 ```
 import zip2state from 'zip2state'
 
-const realState = zip2state('44446')
-console.log(realState) // 'OH'
+const partialZip = zip2state('94')
+console.log(partialZip) // 'CA'
+
+const fullZip = zip2state('44446')
+console.log(fullZip) // 'OH'
 
 const fakeState = zip2state('00000')
 console.log(fakeState) // ''

@@ -1,6 +1,6 @@
 {
   "name": "zip2state",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Automatically & reliably derive US states from postal zip codes (<5k).",
   "type": "module",
   "main": "dist/index.js",
