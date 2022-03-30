@@ -1,5 +1,24 @@
 # Zip2State
-Zip2State is a function that uses an optimized zipcode library to automatically & reliably derive a US state from a zipcode, all for under 5k.
+Zip2State is a function that uses an [optimized zip code library](https://github.com/Meandmybadself/zip2state/blob/main/data/zip-state.txt) to automatically & reliably derive a US state from a zip code, all for under 3k.
+
+![Animation of text input](/zip2state.gif)
+
+*Demo:* https://meandmybadself.github.io/zip2state/
+
+## Why?
+If we can reliably determine a user's state from their zip code, why have them enter both?
+
+Current client-side solutions involve:
+* Loading all zipcodes & city/states (big file size)
+* Interacting with an API (not great for client-only solutions)
+
+## How?
+Reduce entire ranges of a state's zipcodes (eg `94000-94999`) into their base root (`94`) where possible.
+
+## Assumptions
+
+* Zip codes don't move between states
+* New zip codes are added using existing numeric prefixes
 
 ## Installation
 `npm i zip2state`
