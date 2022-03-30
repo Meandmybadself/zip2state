@@ -36,7 +36,12 @@ const parse = async () => {
         })
     }
 
-    fs.writeFileSync('./data/zip-state.json', JSON.stringify(masterKey))
+    const zipStateCondensed = []
+    for ([zip, state] of Object.entries(masterKey)) {
+        zipStateCondensed.push(`${zip}:${state}`)
+    }
+
+    fs.writeFileSync('./data/zip-state.txt', zipStateCondensed.join("|"))
 }
 
 parse()

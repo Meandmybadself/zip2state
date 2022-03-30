@@ -2,10 +2,9 @@
   "name": "zip2state",
   "version": "1.0.5",
   "description": "Automatically & reliably derive US states from postal zip codes (<5k).",
-  "type": "module",
   "main": "dist/index.js",
   "scripts": {
-    "dev": "parcel serve ./harness/index.html --open",
+    "dev": "parcel serve ./src/index.html --open",
     "build": "rm -rf dist & parcel build ./src/index.ts --dist-dir ./dist",
     "parse": "node scripts/parse-csv.js",
     "test": ""
@@ -25,15 +24,16 @@
   "author": "Jeffery Bennett <me@meandmybadself.com>",
   "license": "MIT",
   "devDependencies": {
-    "@babel/plugin-proposal-private-methods": "^7.16.11",
-    "@babel/plugin-transform-typescript": "^7.16.8",
     "@babel/core": "^7.17.8",
     "@babel/plugin-proposal-class-properties": "^7.16.7",
     "@babel/plugin-proposal-decorators": "^7.17.8",
+    "@babel/plugin-proposal-private-methods": "^7.16.11",
     "@babel/plugin-transform-react-jsx": "^7.17.3",
+    "@babel/plugin-transform-typescript": "^7.16.8",
     "lodash": "^4.17.21",
     "papaparse": "^5.3.2",
-    "parcel": "^2.4.0"
-  },
-  "dependencies": {}
+    "parcel": "^2.4.0",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10"
+  }
 }
