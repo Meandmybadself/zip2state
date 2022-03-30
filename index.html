@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Zip2State</title>
+
+        <meta charset="utf-8">
+        <meta name="description" content="Automatically & reliably derive US states from postal zip codes (~5k zipped).">
+        <meta name="author" content="Jeffery Bennett <me@meandmybadself.com>">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <style>
+            body {
+                font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+                padding: 20px 20px 60px;
+                max-width: 680px;
+                margin: 0 auto;
+            }
+            input {
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Zip2State</h1>
+        <p>Automatically & reliably derive US states from postal zip codes (~5k zipped).</p>
+        <p>Type a zipcode below to see it in action.</p>
+        <form>
+            <input type="text" name="zip" id="zip" placeholder="Zip Code"/>
+            <input type="text" name="state" id="state"/>
+        </form>
+        <ul>
+            <li>
+                <a href='https://github.com/Meandmybadself/zip2state'>Github</a>
+            </li>
+            <li>
+                <a href='https://meandmybadself.com/'>Author</a>
+            </li>
+        </ul>
+        <script type="module" src='./index.js'></script>
+    </body>
+</html>
