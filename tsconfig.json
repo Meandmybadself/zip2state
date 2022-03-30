@@ -12,6 +12,11 @@
         ],
         "declaration": true,
         "declarationMap": true,
-        "useDefineForClassFields": false
+        "useDefineForClassFields": false,
+        "resolveJsonModule": true,
+        "types": [
+            "node",
+            "jest"
+        ]
     }
 }
