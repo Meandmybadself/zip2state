@@ -3,9 +3,9 @@
   "version": "1.0.3",
   "description": "Automatically & reliably derive US states from postal zip codes (<5k).",
   "type": "module",
-  "main": "dist/index.js",
   "scripts": {
-    "dev": "parcel serve ./index.html --open",
+    "dev": "parcel serve ./src/index.html --open",
+    "build": "parcel build ./src/index.html --dist-dir ./public",
     "test": ""
   },
   "repository": {
@@ -33,7 +33,5 @@
     "papaparse": "^5.3.2",
     "parcel": "^2.4.0"
   },
-  "dependencies": {
-    "zip2state": "^1.0.5"
-  }
+  "dependencies": {}
 }
