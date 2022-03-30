@@ -34,6 +34,6 @@
     "parcel": "^2.4.0"
   },
   "dependencies": {
-    "zip2state": "^1.0.3"
+    "zip2state": "^1.0.5"
   }
 }
