@@ -1,7 +1,7 @@
-import fs from "fs";
-import path from "path";
+import { readFileSync } from "fs";
+import { join } from "path";
 
-let [zipStatesStr, edgecasesStr] = fs.readFileSync(path.join(__dirname, "../data/zip-state.txt"), "utf8").split("__")
+let [zipStatesStr, edgecasesStr] = readFileSync(join(__dirname, "../data/zip-state.txt"), "utf8").split("__")
 
 const zipStates = zipStatesStr.split('|').reduce((acc, line) => {
     const [zip, state] = line.split(":")
