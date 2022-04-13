@@ -12,7 +12,7 @@ const zipStates = zipStatesStr.split('|').reduce((acc, line) => {
 const edgecases = edgecasesStr.split('|')
 
 export default (zip: string): string | undefined => {
-    for (let i = 1; i < zip.length; i++) {
+    for (let i = 1; i <= zip.length; i++) {
         const key: string = zip.substring(0, i)
         if (edgecases.includes(key)) {
             return ""
