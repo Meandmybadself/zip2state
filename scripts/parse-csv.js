@@ -41,7 +41,10 @@ const parse = async () => {
         zipStateCondensed.push(`${zip}:${state}`)
     }
 
-    fs.writeFileSync('./data/zip-state.txt', zipStateCondensed.join("|"))
+    const edgeCases = fs.readFileSync('./data/edgecases.txt', 'utf-8').split("\n")
+
+    const contentToWrite = [zipStateCondensed.join("|"), edgeCases.join('|')].join("_")
+    fs.writeFileSync('./data/zip-state.txt', contentToWrite)
 }
 
 parse()

@@ -17,11 +17,23 @@ Reduce entire ranges of a state's zipcodes (eg `94000-94999`) into their base ro
 
 ## Assumptions
 
-* Zip codes don't move between states
+* ~Zip codes don't move between states~ (See Update)
 * New zip codes are added using existing numeric prefixes
+
+## Update
+A zip code _can_ be shared across states. ([Reference link](https://gis.stackexchange.com/questions/53918/determining-which-us-zipcodes-map-to-more-than-one-state-or-more-than-one-city))
+
 
 ## Installation
 `npm i zip2state`
+
+## NPM Scripts
+| Script | Description |
+|--------|-------------|
+| `dev`  | Starts up local development process |
+| `build` | Builds component |
+| `parse` | Parses zip code CSV into  `zip-state.txt` |
+
 
 ## Usage
 Function accepts a string (could be a partial zipcode).
