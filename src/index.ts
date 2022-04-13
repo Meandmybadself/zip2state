@@ -14,8 +14,7 @@ const edgecases = edgecasesStr.split('|')
 export default (zip: string): string | undefined => {
     for (let i = 1; i < zip.length; i++) {
         const key: string = zip.substring(0, i)
-        console.log(key, zipStates[key], edgecases[key])
-        if (edgecases[key]) {
+        if (edgecases.includes(key)) {
             return ""
         }
         if (zipStates[key]) {
