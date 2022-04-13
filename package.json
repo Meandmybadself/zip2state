@@ -24,7 +24,9 @@
     "form"
   ],
   "files": [
-    "dist/index.js"
+    "dist/index.js",
+    "dist/index.d.ts",
+    "dist/index.js.map"
   ],
   "author": "Jeffery Bennett <me@meandmybadself.com>",
   "license": "MIT",
