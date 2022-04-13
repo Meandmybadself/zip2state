@@ -3,10 +3,12 @@
   "version": "1.1.0",
   "description": "Automatically & reliably derive US states from postal zip codes (<5k).",
   "main": "dist/index.js",
+  "type": "module",
   "scripts": {
     "dev": "parcel serve ./src/index.html --open",
-    "build": "rm -rf dist & parcel build ./src/index.ts --dist-dir ./dist",
+    "build": "rm -rf dist & parcel build ./src/index.ts --dist-dir ./dist && sed -e 's/import .*//g' ./dist/index.js > ./dist/index.js.tmp && mv ./dist/index.js.tmp ./dist/index.js",
     "parse": "node scripts/parse-csv.js",
+    "publish": "np",
     "test": ""
   },
   "repository": {
@@ -31,6 +33,7 @@
     "@babel/plugin-transform-react-jsx": "^7.17.3",
     "@babel/plugin-transform-typescript": "^7.16.8",
     "lodash": "^4.17.21",
+    "np": "^7.6.1",
     "papaparse": "^5.3.2",
     "parcel": "^2.4.0",
     "path-browserify": "^1.0.1",
